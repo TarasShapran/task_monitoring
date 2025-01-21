@@ -10214,3 +10214,36 @@ AttributeError: 'NoneType' object has no attribute 'name'
 2025-01-21 15:27:04,991 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.5:54734]
 2025-01-21 15:27:05,002 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/chat/asa/ [172.20.0.5:54742]
 2025-01-21 15:27:05,020 (INFO)- django.channels.server- WebSocket CONNECT /api/chat/asa/ [172.20.0.5:54742]
+2025-01-21 15:31:41,467 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-21 15:31:41,861 (INFO)- daphne.server- HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2025-01-21 15:31:41,861 (INFO)- daphne.server- Configuring endpoint tcp:port=8000:interface=0.0.0.0
+2025-01-21 15:31:41,862 (INFO)- daphne.server- Listening on TCP address 0.0.0.0:8000
+2025-01-21 15:33:09,295 (INFO)- django.channels.server- HTTP POST /api/users 201 [2.46, 172.20.0.5:43804]
+2025-01-21 15:33:15,909 (WARNING)- django.request- Bad Request: /api/users
+2025-01-21 15:33:15,909 (WARNING)- django.channels.server- HTTP POST /api/users 400 [0.01, 172.20.0.5:36242]
+2025-01-21 15:33:30,954 (INFO)- django.channels.server- HTTP POST /api/users 201 [4.31, 172.20.0.5:39174]
+2025-01-21 15:33:36,188 (INFO)- django.channels.server- HTTP POST /api/users 201 [2.08, 172.20.0.5:39190]
+2025-01-21 15:33:47,204 (INFO)- django.channels.server- HTTP POST /api/users 201 [4.42, 172.20.0.5:32920]
+2025-01-21 15:33:58,459 (WARNING)- django.request- Unauthorized: /api/tasks
+2025-01-21 15:33:58,459 (WARNING)- django.channels.server- HTTP POST /api/tasks 401 [0.00, 172.20.0.5:46354]
+2025-01-21 15:34:39,462 (INFO)- django.channels.server- HTTP POST /api/auth 200 [0.76, 172.20.0.5:45562]
+2025-01-21 15:34:42,937 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.25, 172.20.0.5:45566]
+2025-01-21 15:34:47,625 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.02, 172.20.0.5:37484]
+2025-01-21 15:34:51,938 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.02, 172.20.0.5:37492]
+2025-01-21 15:34:53,016 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.02, 172.20.0.5:37502]
+2025-01-21 15:34:55,354 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.02, 172.20.0.5:37512]
+2025-01-21 15:34:58,495 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.02, 172.20.0.5:52726]
+2025-01-21 15:35:01,090 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.02, 172.20.0.5:52732]
+2025-01-21 15:35:01,764 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.02, 172.20.0.5:52734]
+2025-01-21 15:35:02,418 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.02, 172.20.0.5:52750]
+2025-01-21 15:35:03,038 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.02, 172.20.0.5:52756]
+2025-01-21 15:35:05,683 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.02, 172.20.0.5:52768]
+2025-01-21 15:35:08,425 (WARNING)- django.request- Bad Request: /api/tasks
+2025-01-21 15:35:08,425 (WARNING)- django.channels.server- HTTP POST /api/tasks 400 [0.01, 172.20.0.5:43120]
+2025-01-21 15:35:12,637 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.02, 172.20.0.5:43136]
+2025-01-21 15:35:13,322 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.02, 172.20.0.5:43144]
+2025-01-21 15:35:15,656 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.02, 172.20.0.5:43146]
+2025-01-21 15:35:16,293 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.02, 172.20.0.5:34386]
+2025-01-21 15:35:16,884 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.02, 172.20.0.5:34392]
+2025-01-21 15:35:19,517 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.02, 172.20.0.5:34398]
+2025-01-21 15:35:20,225 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.02, 172.20.0.5:34408]

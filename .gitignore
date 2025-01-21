@@ -2,5 +2,4 @@
 venv
 mysql
 .env
-client
-mysql_db/
+
