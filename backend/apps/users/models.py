@@ -11,15 +11,6 @@ from django.db import models
 from apps.users.managers import UserManager
 
 
-class MentorProfileModel(BaseModel):
-    class Meta:
-        db_table = 'mentor_profile'
-
-    experience = models.TextField()
-    specialization = models.ManyToManyField('mentorship.SpecializationModel')
-    technology_stack = models.ManyToManyField('mentorship.TechnologyStackModel')
-
-
 class ProfileModel(BaseModel):
     class Meta:
         db_table = 'profile'
@@ -53,7 +44,6 @@ class UserModel(AbstractBaseUser, PermissionsMixin, BaseModel):
     is_active = models.BooleanField(default=False)
     is_staff = models.BooleanField(default=False)
     profile = models.OneToOneField(ProfileModel, on_delete=models.CASCADE, related_name='user', null=True)
-    mentor_profile = models.OneToOneField(MentorProfileModel, on_delete=models.CASCADE, related_name='user', null=True)
 
     @classmethod
     def get_max_tasks(cls):

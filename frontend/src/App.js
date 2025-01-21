@@ -2,18 +2,18 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 
 const App = () => {
-    const [cars, setCars] = useState([])
+    const [tasks, setTasks] = useState([])
 
     useEffect(() => {
-        axios.get('/api/cars').then(({data}) => {
-            setCars(data)
+        axios.get('/api/tasks').then(({data}) => {
+            setTasks(data)
         })
     }, []);
 
     return (
         <div>
-            <h1>Cars</h1>
-            {cars.map(car=><div key={car.id}>{JSON.stringify(car)}</div>)}
+            <h1>Tasks</h1>
+            {tasks.map(task=><div key={task.id}>{JSON.stringify(task)}</div>)}
         </div>
     );
 };

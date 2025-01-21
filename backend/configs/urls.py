@@ -34,11 +34,9 @@ schema_view = get_schema_view(
     permission_classes=(AllowAny,),
 )
 urlpatterns = [
-    path('api/cars', include('apps.cars.urls')),
-    path('api/auto_parks', include('apps.auto_parks.urls')),
+
     path('api/tasks', include('apps.task.urls')),
     path('api/users', include('apps.users.urls')),
-    path('api/mentorship', include('apps.mentorship.urls')),
     path('api/auth', include('apps.auth.urls')),
     path('api/doc', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
 ]

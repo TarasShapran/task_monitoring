@@ -9929,3 +9929,288 @@ SyntaxError: invalid syntax
 2025-01-21 14:34:34,311 (INFO)- django.channels.server- HTTP PATCH /api/tasks/103 200 [0.01, 172.20.0.4:43788]
 2025-01-21 14:34:51,163 (INFO)- django.channels.server- HTTP PATCH /api/tasks/101 200 [0.01, 172.20.0.4:52970]
 2025-01-21 14:34:52,450 (INFO)- django.channels.server- HTTP PATCH /api/tasks/100 200 [0.01, 172.20.0.4:52980]
+2025-01-21 14:50:23,423 (INFO)- django.utils.autoreload- /app/configs/settings.py changed, reloading.
+2025-01-21 14:50:26,502 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-21 14:52:29,226 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-21 14:58:18,180 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-21 15:00:54,865 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-21 15:00:55,332 (INFO)- daphne.server- HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2025-01-21 15:00:55,333 (INFO)- daphne.server- Configuring endpoint tcp:port=8000:interface=0.0.0.0
+2025-01-21 15:00:55,333 (INFO)- daphne.server- Listening on TCP address 0.0.0.0:8000
+2025-01-21 15:01:02,625 (INFO)- django.channels.server- HTTP POST /api/auth 200 [0.73, 172.20.0.3:53086]
+2025-01-21 15:01:13,350 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.24, 172.20.0.3:36950]
+2025-01-21 15:01:19,084 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.02, 172.20.0.3:46698]
+2025-01-21 15:01:22,843 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.02, 172.20.0.3:46700]
+2025-01-21 15:01:24,380 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.02, 172.20.0.3:46714]
+2025-01-21 15:01:25,075 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.02, 172.20.0.3:46726]
+2025-01-21 15:11:45,900 (INFO)- django.channels.server- HTTP GET /api/doc 200 [0.04, 172.20.0.3:47166]
+2025-01-21 15:11:46,187 (WARNING)- drf_yasg.inspectors.base- view's ActivateUserView raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ActivateUserView' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+2025-01-21 15:11:46,188 (WARNING)- drf_yasg.inspectors.base- view's ActivateUserView raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ActivateUserView' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+2025-01-21 15:11:46,194 (WARNING)- drf_yasg.inspectors.base- view's SocketTokenView raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'SocketTokenView' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+2025-01-21 15:11:46,213 (WARNING)- drf_yasg.inspectors.base- view's UserBanView raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'UserBanView' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+2025-01-21 15:11:46,214 (WARNING)- drf_yasg.inspectors.base- view's UserBanView raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'UserBanView' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+2025-01-21 15:11:46,215 (WARNING)- drf_yasg.inspectors.base- view's UserToAdminView raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'UserToAdminView' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+2025-01-21 15:11:46,216 (WARNING)- drf_yasg.inspectors.base- view's UserToAdminView raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'UserToAdminView' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+2025-01-21 15:11:46,216 (WARNING)- drf_yasg.inspectors.base- view's AdminToUserView raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'AdminToUserView' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+2025-01-21 15:11:46,217 (WARNING)- drf_yasg.inspectors.base- view's AdminToUserView raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'AdminToUserView' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+2025-01-21 15:11:46,230 (INFO)- django.channels.server- HTTP GET /api/doc?format=openapi 200 [0.05, 172.20.0.3:47172]
+2025-01-21 15:16:00,300 (WARNING)- django.request- Unauthorized: /api/auth
+2025-01-21 15:16:00,301 (WARNING)- django.channels.server- HTTP POST /api/auth 401 [0.69, 172.20.0.3:54922]
+2025-01-21 15:16:11,406 (INFO)- django.channels.server- HTTP POST /api/auth 200 [0.69, 172.20.0.3:39180]
+2025-01-21 15:16:11,428 (WARNING)- django.request- Not Found: /api/cars
+2025-01-21 15:16:11,429 (WARNING)- django.channels.server- HTTP GET /api/cars 404 [0.01, 172.20.0.3:39184]
+2025-01-21 15:16:11,435 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.3:39200]
+2025-01-21 15:16:11,450 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/cars/ [172.20.0.3:39216]
+2025-01-21 15:16:11,957 (ERROR)- daphne.server- Exception inside application: No route found for path 'api/cars/'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/channels/routing.py", line 48, in __call__
+    return await application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/middlewares/auth_socket_middleware.py", line 20, in __call__
+    return await super().__call__(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/channels/middleware.py", line 24, in __call__
+    return await self.inner(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/channels/routing.py", line 136, in __call__
+    raise ValueError("No route found for path %r." % path)
+ValueError: No route found for path 'api/cars/'.
+2025-01-21 15:16:11,961 (INFO)- django.channels.server- WebSocket DISCONNECT /api/cars/ [172.20.0.3:39216]
+2025-01-21 15:17:30,627 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-21 15:17:31,048 (INFO)- daphne.server- HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2025-01-21 15:17:31,048 (INFO)- daphne.server- Configuring endpoint tcp:port=8000:interface=0.0.0.0
+2025-01-21 15:17:31,049 (INFO)- daphne.server- Listening on TCP address 0.0.0.0:8000
+2025-01-21 15:17:45,022 (INFO)- django.channels.server- HTTP POST /api/auth 200 [0.73, 172.20.0.4:45648]
+2025-01-21 15:17:45,043 (WARNING)- django.request- Not Found: /api/cars
+2025-01-21 15:17:45,044 (WARNING)- django.channels.server- HTTP GET /api/cars 404 [0.01, 172.20.0.4:45664]
+2025-01-21 15:17:45,051 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.4:45670]
+2025-01-21 15:17:45,065 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/cars/ [172.20.0.4:45686]
+2025-01-21 15:17:46,058 (ERROR)- daphne.server- Exception inside application: No route found for path 'api/cars/'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/channels/routing.py", line 48, in __call__
+    return await application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/middlewares/auth_socket_middleware.py", line 20, in __call__
+    return await super().__call__(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/channels/middleware.py", line 24, in __call__
+    return await self.inner(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/channels/routing.py", line 136, in __call__
+    raise ValueError("No route found for path %r." % path)
+ValueError: No route found for path 'api/cars/'.
+2025-01-21 15:17:46,059 (INFO)- django.channels.server- WebSocket DISCONNECT /api/cars/ [172.20.0.4:45686]
+2025-01-21 15:17:51,054 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.4:40192]
+2025-01-21 15:17:51,058 (INFO)- django.channels.server- HTTP GET /api/tasks 200 [0.03, 172.20.0.4:40178]
+2025-01-21 15:17:52,057 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/tasks/ [172.20.0.4:40200]
+2025-01-21 15:17:52,246 (INFO)- django.channels.server- WebSocket CONNECT /api/tasks/ [172.20.0.4:40200]
+2025-01-21 15:21:00,249 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-21 15:21:00,696 (INFO)- daphne.server- HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2025-01-21 15:21:00,696 (INFO)- daphne.server- Configuring endpoint tcp:port=8000:interface=0.0.0.0
+2025-01-21 15:21:00,697 (INFO)- daphne.server- Listening on TCP address 0.0.0.0:8000
+2025-01-21 15:21:15,905 (INFO)- django.channels.server- HTTP POST /api/auth 200 [0.74, 172.20.0.5:42562]
+2025-01-21 15:21:15,925 (WARNING)- django.request- Not Found: /api/cars
+2025-01-21 15:21:15,926 (WARNING)- django.channels.server- HTTP GET /api/cars 404 [0.01, 172.20.0.5:50200]
+2025-01-21 15:21:15,937 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.5:50202]
+2025-01-21 15:21:15,953 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/cars/ [172.20.0.5:50214]
+2025-01-21 15:21:16,711 (ERROR)- daphne.server- Exception inside application: No route found for path 'api/cars/'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/channels/routing.py", line 48, in __call__
+    return await application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/middlewares/auth_socket_middleware.py", line 20, in __call__
+    return await super().__call__(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/channels/middleware.py", line 24, in __call__
+    return await self.inner(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/channels/routing.py", line 136, in __call__
+    raise ValueError("No route found for path %r." % path)
+ValueError: No route found for path 'api/cars/'.
+2025-01-21 15:21:16,715 (INFO)- django.channels.server- WebSocket DISCONNECT /api/cars/ [172.20.0.5:50214]
+2025-01-21 15:21:31,842 (INFO)- django.channels.server- HTTP POST /api/auth 200 [0.68, 172.20.0.5:44956]
+2025-01-21 15:21:31,860 (WARNING)- django.request- Not Found: /api/cars
+2025-01-21 15:21:31,862 (WARNING)- django.channels.server- HTTP GET /api/cars 404 [0.01, 172.20.0.5:44960]
+2025-01-21 15:21:31,871 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.5:44976]
+2025-01-21 15:21:31,887 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/cars/ [172.20.0.5:44978]
+2025-01-21 15:21:32,728 (ERROR)- daphne.server- Exception inside application: No route found for path 'api/cars/'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/channels/routing.py", line 48, in __call__
+    return await application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/middlewares/auth_socket_middleware.py", line 20, in __call__
+    return await super().__call__(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/channels/middleware.py", line 24, in __call__
+    return await self.inner(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/channels/routing.py", line 136, in __call__
+    raise ValueError("No route found for path %r." % path)
+ValueError: No route found for path 'api/cars/'.
+2025-01-21 15:21:32,730 (INFO)- django.channels.server- WebSocket DISCONNECT /api/cars/ [172.20.0.5:44978]
+2025-01-21 15:25:33,901 (INFO)- django.channels.server- HTTP POST /api/auth 200 [0.68, 172.20.0.5:50448]
+2025-01-21 15:25:33,928 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.5:50454]
+2025-01-21 15:25:33,931 (INFO)- django.channels.server- HTTP GET /api/tasks 200 [0.02, 172.20.0.5:50450]
+2025-01-21 15:25:33,997 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/tasks/ [172.20.0.5:50460]
+2025-01-21 15:25:34,159 (INFO)- django.channels.server- WebSocket CONNECT /api/tasks/ [172.20.0.5:50460]
+2025-01-21 15:25:38,309 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.01, 172.20.0.5:40134]
+2025-01-21 15:25:38,316 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/chat/asa/ [172.20.0.5:40144]
+2025-01-21 15:25:38,899 (ERROR)- daphne.server- Exception inside application: 'NoneType' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/channels/routing.py", line 48, in __call__
+    return await application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/middlewares/auth_socket_middleware.py", line 20, in __call__
+    return await super().__call__(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/channels/middleware.py", line 24, in __call__
+    return await self.inner(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/channels/routing.py", line 118, in __call__
+    return await application(
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/channels/routing.py", line 118, in __call__
+    return await application(
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/channels/consumer.py", line 95, in app
+    return await consumer(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/usr/local/lib/python3.11/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/usr/local/lib/python3.11/site-packages/channels/consumer.py", line 74, in dispatch
+    await handler(message)
+  File "/usr/local/lib/python3.11/site-packages/djangochannelsrestframework/consumers.py", line 84, in websocket_connect
+    await super().websocket_connect(message)
+  File "/usr/local/lib/python3.11/site-packages/channels/generic/websocket.py", line 180, in websocket_connect
+    await self.connect()
+  File "/app/apps/chat/consumers.py", line 18, in connect
+    self.user_name = await self.get_profile_name()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/chat/consumers.py", line 49, in get_profile_name
+    return user.profile.name
+           ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'name'
+2025-01-21 15:25:38,910 (INFO)- django.channels.server- WebSocket DISCONNECT /api/chat/asa/ [172.20.0.5:40144]
+2025-01-21 15:26:27,357 (INFO)- django.channels.server- HTTP POST /api/users 201 [2.45, 172.20.0.5:49342]
+2025-01-21 15:26:53,377 (INFO)- django.channels.server- WebSocket DISCONNECT /api/tasks/ [172.20.0.5:50460]
+2025-01-21 15:27:02,891 (INFO)- django.channels.server- HTTP POST /api/auth 200 [0.70, 172.20.0.5:54692]
+2025-01-21 15:27:02,918 (INFO)- django.channels.server- HTTP GET /api/tasks 200 [0.01, 172.20.0.5:54706]
+2025-01-21 15:27:02,920 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.01, 172.20.0.5:54710]
+2025-01-21 15:27:02,925 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/tasks/ [172.20.0.5:54726]
+2025-01-21 15:27:02,935 (INFO)- django.channels.server- WebSocket CONNECT /api/tasks/ [172.20.0.5:54726]
+2025-01-21 15:27:04,991 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.5:54734]
+2025-01-21 15:27:05,002 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/chat/asa/ [172.20.0.5:54742]
+2025-01-21 15:27:05,020 (INFO)- django.channels.server- WebSocket CONNECT /api/chat/asa/ [172.20.0.5:54742]

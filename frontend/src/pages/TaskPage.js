@@ -1,5 +1,6 @@
-import {TaskForm} from "../components/CarContainer/TaskForm";
-import {Tasks} from "../components/CarContainer/Tasks";
+import {TaskForm} from "../components/TaskContainer/TaskForm";
+import {Tasks} from "../components/TaskContainer/Tasks";
+import {Chat} from "../components/TaskContainer/Chat";
 
 const TaskPage = () => {
     return (
@@ -7,6 +8,7 @@ const TaskPage = () => {
             <TaskForm/>
             <hr/>
             <Tasks/>
+            <Chat/>
         </div>
     );
 };

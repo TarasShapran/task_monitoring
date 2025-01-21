@@ -1,7 +1,6 @@
 const baseURL = '/api'
 
 const auth = '/auth'
-const cars = '/cars'
 const tasks = '/tasks'
 
 const urls = {
@@ -9,7 +8,6 @@ const urls = {
         login: auth,
         socket: `${auth}/socket`
     },
-    cars,
     tasks
 }
 
