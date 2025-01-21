@@ -10247,3 +10247,254 @@ AttributeError: 'NoneType' object has no attribute 'name'
 2025-01-21 15:35:16,884 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.02, 172.20.0.5:34392]
 2025-01-21 15:35:19,517 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.02, 172.20.0.5:34398]
 2025-01-21 15:35:20,225 (INFO)- django.channels.server- HTTP POST /api/tasks 201 [0.02, 172.20.0.5:34408]
+2025-01-21 15:56:09,432 (WARNING)- django.request- Unauthorized: /api/tasks
+2025-01-21 15:56:09,432 (WARNING)- django.channels.server- HTTP GET /api/tasks 401 [0.01, 172.20.0.5:43080]
+2025-01-21 15:56:09,432 (WARNING)- django.request- Unauthorized: /api/auth/socket
+2025-01-21 15:56:09,433 (WARNING)- django.channels.server- HTTP GET /api/auth/socket 401 [0.01, 172.20.0.5:43092]
+2025-01-21 16:19:57,439 (INFO)- django.utils.autoreload- /app/configs/extra_conf/jwt_conf.py changed, reloading.
+2025-01-21 16:20:00,496 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-21 16:20:00,948 (INFO)- daphne.server- HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2025-01-21 16:20:00,948 (INFO)- daphne.server- Configuring endpoint tcp:port=8000:interface=0.0.0.0
+2025-01-21 16:20:00,949 (INFO)- daphne.server- Listening on TCP address 0.0.0.0:8000
+2025-01-21 16:20:21,155 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-21 16:20:21,572 (INFO)- daphne.server- HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2025-01-21 16:20:21,572 (INFO)- daphne.server- Configuring endpoint tcp:port=8000:interface=0.0.0.0
+2025-01-21 16:20:21,572 (INFO)- daphne.server- Listening on TCP address 0.0.0.0:8000
+2025-01-21 16:20:41,252 (WARNING)- django.request- Unauthorized: /api/auth
+2025-01-21 16:20:41,253 (WARNING)- django.channels.server- HTTP POST /api/auth 401 [0.73, 172.20.0.6:38878]
+2025-01-21 16:20:48,261 (INFO)- django.channels.server- HTTP POST /api/auth 200 [0.75, 172.20.0.6:39730]
+2025-01-21 16:20:48,283 (WARNING)- django.request- Not Found: /api/cars
+2025-01-21 16:20:48,284 (WARNING)- django.channels.server- HTTP GET /api/cars 404 [0.01, 172.20.0.6:39738]
+2025-01-21 16:20:48,292 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.6:39744]
+2025-01-21 16:20:48,318 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/cars/ [172.20.0.6:39748]
+2025-01-21 16:20:48,590 (ERROR)- daphne.server- Exception inside application: No route found for path 'api/cars/'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/channels/routing.py", line 48, in __call__
+    return await application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/middlewares/auth_socket_middleware.py", line 20, in __call__
+    return await super().__call__(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/channels/middleware.py", line 24, in __call__
+    return await self.inner(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/channels/routing.py", line 136, in __call__
+    raise ValueError("No route found for path %r." % path)
+ValueError: No route found for path 'api/cars/'.
+2025-01-21 16:20:48,592 (INFO)- django.channels.server- WebSocket DISCONNECT /api/cars/ [172.20.0.6:39748]
+2025-01-21 16:20:54,730 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.6:39764]
+2025-01-21 16:20:54,767 (INFO)- django.channels.server- HTTP GET /api/tasks 200 [0.05, 172.20.0.6:39766]
+2025-01-21 16:20:54,786 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/tasks/ [172.20.0.6:39776]
+2025-01-21 16:20:55,017 (INFO)- django.channels.server- WebSocket CONNECT /api/tasks/ [172.20.0.6:39776]
+2025-01-21 16:20:59,564 (INFO)- django.channels.server- WebSocket DISCONNECT /api/tasks/ [172.20.0.6:39776]
+2025-01-21 16:20:59,683 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.6:53010]
+2025-01-21 16:20:59,706 (INFO)- django.channels.server- HTTP GET /api/tasks 200 [0.05, 172.20.0.6:53000]
+2025-01-21 16:20:59,758 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/tasks/ [172.20.0.6:53022]
+2025-01-21 16:20:59,776 (INFO)- django.channels.server- WebSocket CONNECT /api/tasks/ [172.20.0.6:53022]
+2025-01-21 16:21:32,580 (INFO)- django.channels.server- WebSocket DISCONNECT /api/tasks/ [172.20.0.6:53022]
+2025-01-21 16:21:32,738 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.6:42254]
+2025-01-21 16:21:32,762 (INFO)- django.channels.server- HTTP GET /api/tasks 200 [0.05, 172.20.0.6:42250]
+2025-01-21 16:21:32,794 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/tasks/ [172.20.0.6:42258]
+2025-01-21 16:21:32,810 (INFO)- django.channels.server- WebSocket CONNECT /api/tasks/ [172.20.0.6:42258]
+2025-01-21 16:21:58,830 (INFO)- django.channels.server- WebSocket DISCONNECT /api/tasks/ [172.20.0.6:42258]
+2025-01-21 16:21:58,997 (WARNING)- django.request- Unauthorized: /api/tasks
+2025-01-21 16:21:58,997 (WARNING)- django.request- Unauthorized: /api/auth/socket
+2025-01-21 16:21:58,998 (WARNING)- django.channels.server- HTTP GET /api/tasks 401 [0.01, 172.20.0.6:53852]
+2025-01-21 16:21:58,998 (WARNING)- django.channels.server- HTTP GET /api/auth/socket 401 [0.01, 172.20.0.6:53854]
+2025-01-21 16:23:57,970 (WARNING)- django.request- Unauthorized: /api/tasks
+2025-01-21 16:23:57,970 (WARNING)- django.channels.server- HTTP GET /api/tasks 401 [0.00, 172.20.0.6:54868]
+2025-01-21 16:23:57,973 (WARNING)- django.request- Unauthorized: /api/auth/socket
+2025-01-21 16:23:57,974 (WARNING)- django.channels.server- HTTP GET /api/auth/socket 401 [0.00, 172.20.0.6:54874]
+2025-01-21 16:24:17,487 (INFO)- django.channels.server- HTTP POST /api/auth 200 [0.70, 172.20.0.6:34266]
+2025-01-21 16:24:17,519 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.6:34276]
+2025-01-21 16:24:17,527 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/tasks/ [172.20.0.6:34292]
+2025-01-21 16:24:17,532 (INFO)- django.channels.server- HTTP GET /api/tasks 200 [0.03, 172.20.0.6:34272]
+2025-01-21 16:24:17,537 (INFO)- django.channels.server- WebSocket CONNECT /api/tasks/ [172.20.0.6:34292]
+2025-01-21 16:24:21,779 (INFO)- django.channels.server- WebSocket DISCONNECT /api/tasks/ [172.20.0.6:34292]
+2025-01-21 16:24:21,940 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.6:34312]
+2025-01-21 16:24:21,946 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/tasks/ [172.20.0.6:34324]
+2025-01-21 16:24:21,958 (INFO)- django.channels.server- HTTP GET /api/tasks 200 [0.04, 172.20.0.6:34306]
+2025-01-21 16:24:21,961 (INFO)- django.channels.server- WebSocket CONNECT /api/tasks/ [172.20.0.6:34324]
+2025-01-21 16:25:12,976 (INFO)- django.channels.server- HTTP POST /api/auth 200 [0.69, 172.20.0.6:38026]
+2025-01-21 16:25:13,010 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.6:38048]
+2025-01-21 16:25:13,027 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/tasks/ [172.20.0.6:38054]
+2025-01-21 16:25:13,031 (INFO)- django.channels.server- HTTP GET /api/tasks 200 [0.04, 172.20.0.6:38042]
+2025-01-21 16:25:13,039 (INFO)- django.channels.server- WebSocket CONNECT /api/tasks/ [172.20.0.6:38054]
+2025-01-21 16:25:19,814 (INFO)- django.channels.server- WebSocket DISCONNECT /api/tasks/ [172.20.0.6:34324]
+2025-01-21 16:25:20,025 (WARNING)- django.request- Unauthorized: /api/tasks
+2025-01-21 16:25:20,025 (WARNING)- django.request- Unauthorized: /api/auth/socket
+2025-01-21 16:25:20,026 (WARNING)- django.channels.server- HTTP GET /api/tasks 401 [0.01, 172.20.0.6:55906]
+2025-01-21 16:25:20,028 (WARNING)- django.channels.server- HTTP GET /api/auth/socket 401 [0.01, 172.20.0.6:55920]
+2025-01-21 16:30:51,116 (INFO)- django.utils.autoreload- /app/configs/extra_conf/jwt_conf.py changed, reloading.
+2025-01-21 16:30:54,237 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-21 16:31:14,733 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-21 16:31:15,162 (INFO)- daphne.server- HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2025-01-21 16:31:15,162 (INFO)- daphne.server- Configuring endpoint tcp:port=8000:interface=0.0.0.0
+2025-01-21 16:31:15,163 (INFO)- daphne.server- Listening on TCP address 0.0.0.0:8000
+2025-01-21 16:31:16,537 (INFO)- django.channels.server- HTTP POST /api/auth 200 [0.72, 172.20.0.3:41028]
+2025-01-21 16:31:16,568 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.3:41050]
+2025-01-21 16:31:16,585 (INFO)- django.channels.server- HTTP GET /api/tasks 200 [0.04, 172.20.0.3:41034]
+2025-01-21 16:31:16,662 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/tasks/ [172.20.0.3:41064]
+2025-01-21 16:31:16,839 (INFO)- django.channels.server- WebSocket CONNECT /api/tasks/ [172.20.0.3:41064]
+2025-01-21 16:31:19,112 (INFO)- django.channels.server- WebSocket DISCONNECT /api/tasks/ [172.20.0.3:41064]
+2025-01-21 16:31:19,298 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.01, 172.20.0.3:41080]
+2025-01-21 16:31:19,308 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/tasks/ [172.20.0.3:41084]
+2025-01-21 16:31:19,319 (INFO)- django.channels.server- HTTP GET /api/tasks 200 [0.04, 172.20.0.3:41072]
+2025-01-21 16:31:19,323 (INFO)- django.channels.server- WebSocket CONNECT /api/tasks/ [172.20.0.3:41084]
+2025-01-21 16:31:22,776 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.01, 172.20.0.3:41092]
+2025-01-21 16:31:22,784 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/chat/asdas/ [172.20.0.3:41104]
+2025-01-21 16:31:23,169 (ERROR)- daphne.server- Exception inside application: 'NoneType' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/channels/routing.py", line 48, in __call__
+    return await application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/middlewares/auth_socket_middleware.py", line 20, in __call__
+    return await super().__call__(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/channels/middleware.py", line 24, in __call__
+    return await self.inner(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/channels/routing.py", line 118, in __call__
+    return await application(
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/channels/routing.py", line 118, in __call__
+    return await application(
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/channels/consumer.py", line 95, in app
+    return await consumer(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/usr/local/lib/python3.11/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/usr/local/lib/python3.11/site-packages/channels/consumer.py", line 74, in dispatch
+    await handler(message)
+  File "/usr/local/lib/python3.11/site-packages/djangochannelsrestframework/consumers.py", line 84, in websocket_connect
+    await super().websocket_connect(message)
+  File "/usr/local/lib/python3.11/site-packages/channels/generic/websocket.py", line 180, in websocket_connect
+    await self.connect()
+  File "/app/apps/chat/consumers.py", line 18, in connect
+    self.user_name = await self.get_profile_name()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/chat/consumers.py", line 49, in get_profile_name
+    return user.profile.name
+           ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'name'
+2025-01-21 16:31:23,175 (INFO)- django.channels.server- WebSocket DISCONNECT /api/chat/asdas/ [172.20.0.3:41104]
+2025-01-21 16:31:38,415 (INFO)- django.channels.server- WebSocket DISCONNECT /api/tasks/ [172.20.0.3:41084]
+2025-01-21 16:31:38,551 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.3:35870]
+2025-01-21 16:31:38,560 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/tasks/ [172.20.0.3:35876]
+2025-01-21 16:31:38,563 (INFO)- django.channels.server- HTTP GET /api/tasks 200 [0.03, 172.20.0.3:35858]
+2025-01-21 16:31:38,572 (INFO)- django.channels.server- WebSocket CONNECT /api/tasks/ [172.20.0.3:35876]
+2025-01-21 16:31:41,255 (INFO)- django.channels.server- WebSocket DISCONNECT /api/tasks/ [172.20.0.3:35876]
+2025-01-21 16:31:41,379 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.01, 172.20.0.3:35882]
+2025-01-21 16:31:41,402 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/tasks/ [172.20.0.3:35892]
+2025-01-21 16:31:41,405 (INFO)- django.channels.server- HTTP GET /api/tasks 200 [0.04, 172.20.0.3:35878]
+2025-01-21 16:31:41,413 (INFO)- django.channels.server- WebSocket CONNECT /api/tasks/ [172.20.0.3:35892]
+2025-01-21 16:31:44,644 (INFO)- django.channels.server- WebSocket DISCONNECT /api/tasks/ [172.20.0.3:35892]
+2025-01-21 16:31:44,807 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.3:35904]
+2025-01-21 16:31:44,818 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/tasks/ [172.20.0.3:35920]
+2025-01-21 16:31:44,828 (INFO)- django.channels.server- HTTP GET /api/tasks 200 [0.05, 172.20.0.3:35898]
+2025-01-21 16:31:44,836 (INFO)- django.channels.server- WebSocket CONNECT /api/tasks/ [172.20.0.3:35920]
+2025-01-21 16:32:06,463 (INFO)- django.channels.server- WebSocket DISCONNECT /api/tasks/ [172.20.0.3:35920]
+2025-01-21 16:32:06,615 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.3:53210]
+2025-01-21 16:32:06,640 (INFO)- django.channels.server- HTTP GET /api/tasks 200 [0.04, 172.20.0.3:53194]
+2025-01-21 16:32:06,673 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/tasks/ [172.20.0.3:53226]
+2025-01-21 16:32:06,689 (INFO)- django.channels.server- WebSocket CONNECT /api/tasks/ [172.20.0.3:53226]
+2025-01-21 16:32:09,134 (INFO)- django.channels.server- WebSocket DISCONNECT /api/tasks/ [172.20.0.3:53226]
+2025-01-21 16:32:09,242 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.3:53250]
+2025-01-21 16:32:09,259 (INFO)- django.channels.server- HTTP GET /api/tasks 200 [0.03, 172.20.0.3:53242]
+2025-01-21 16:32:09,274 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/tasks/ [172.20.0.3:53254]
+2025-01-21 16:32:09,287 (INFO)- django.channels.server- WebSocket CONNECT /api/tasks/ [172.20.0.3:53254]
+2025-01-21 16:32:15,970 (INFO)- django.channels.server- WebSocket DISCONNECT /api/tasks/ [172.20.0.3:53254]
+2025-01-21 16:32:16,073 (WARNING)- django.request- Unauthorized: /api/tasks
+2025-01-21 16:32:16,073 (WARNING)- django.request- Unauthorized: /api/auth/socket
+2025-01-21 16:32:16,074 (WARNING)- django.channels.server- HTTP GET /api/tasks 401 [0.01, 172.20.0.3:45424]
+2025-01-21 16:32:16,074 (WARNING)- django.channels.server- HTTP GET /api/auth/socket 401 [0.01, 172.20.0.3:45440]
+2025-01-21 16:32:40,000 (WARNING)- django.request- Unauthorized: /api/auth/socket
+2025-01-21 16:32:40,000 (WARNING)- django.request- Unauthorized: /api/tasks
+2025-01-21 16:32:40,001 (WARNING)- django.channels.server- HTTP GET /api/auth/socket 401 [0.00, 172.20.0.3:45904]
+2025-01-21 16:32:40,001 (WARNING)- django.channels.server- HTTP GET /api/tasks 401 [0.01, 172.20.0.3:45888]
+2025-01-21 16:32:51,122 (WARNING)- django.request- Unauthorized: /api/tasks
+2025-01-21 16:32:51,123 (WARNING)- django.channels.server- HTTP GET /api/tasks 401 [0.00, 172.20.0.3:49884]
+2025-01-21 16:32:51,123 (WARNING)- django.request- Unauthorized: /api/auth/socket
+2025-01-21 16:32:51,124 (WARNING)- django.channels.server- HTTP GET /api/auth/socket 401 [0.01, 172.20.0.3:49900]
+2025-01-21 16:35:29,860 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-21 16:35:30,271 (INFO)- daphne.server- HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2025-01-21 16:35:30,271 (INFO)- daphne.server- Configuring endpoint tcp:port=8000:interface=0.0.0.0
+2025-01-21 16:35:30,272 (INFO)- daphne.server- Listening on TCP address 0.0.0.0:8000
+2025-01-21 16:35:40,560 (INFO)- django.channels.server- HTTP POST /api/auth 200 [0.75, 172.20.0.3:45396]
+2025-01-21 16:35:40,592 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.3:45400]
+2025-01-21 16:35:40,600 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/tasks/ [172.20.0.3:45404]
+2025-01-21 16:35:40,609 (INFO)- django.channels.server- HTTP GET /api/tasks 200 [0.04, 172.20.0.3:45398]
+2025-01-21 16:35:40,781 (INFO)- django.channels.server- WebSocket CONNECT /api/tasks/ [172.20.0.3:45404]
+2025-01-21 16:37:56,328 (INFO)- django.channels.server- WebSocket DISCONNECT /api/tasks/ [172.20.0.3:45404]
+2025-01-21 16:37:56,482 (WARNING)- django.request- Unauthorized: /api/tasks
+2025-01-21 16:37:56,482 (WARNING)- django.request- Unauthorized: /api/auth/socket
+2025-01-21 16:37:56,482 (WARNING)- django.channels.server- HTTP GET /api/tasks 401 [0.01, 172.20.0.3:39694]
+2025-01-21 16:37:56,483 (WARNING)- django.channels.server- HTTP GET /api/auth/socket 401 [0.01, 172.20.0.3:39698]
+2025-01-21 16:43:29,396 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-21 16:43:29,812 (INFO)- daphne.server- HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2025-01-21 16:43:29,812 (INFO)- daphne.server- Configuring endpoint tcp:port=8000:interface=0.0.0.0
+2025-01-21 16:43:29,813 (INFO)- daphne.server- Listening on TCP address 0.0.0.0:8000
+2025-01-21 16:44:04,719 (INFO)- django.channels.server- HTTP POST /api/auth 200 [0.73, 172.20.0.2:59982]
+2025-01-21 16:44:04,747 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.01, 172.20.0.2:59996]
+2025-01-21 16:44:04,765 (INFO)- django.channels.server- HTTP GET /api/tasks 200 [0.03, 172.20.0.2:59986]
+2025-01-21 16:44:04,841 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/tasks/ [172.20.0.2:60004]
+2025-01-21 16:44:05,027 (INFO)- django.channels.server- WebSocket CONNECT /api/tasks/ [172.20.0.2:60004]
+2025-01-21 16:50:33,870 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-21 16:50:34,294 (INFO)- daphne.server- HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2025-01-21 16:50:34,294 (INFO)- daphne.server- Configuring endpoint tcp:port=8000:interface=0.0.0.0
+2025-01-21 16:50:34,295 (INFO)- daphne.server- Listening on TCP address 0.0.0.0:8000
+2025-01-21 16:50:34,693 (WARNING)- django.request- Unauthorized: /api/tasks
+2025-01-21 16:50:34,693 (WARNING)- django.request- Unauthorized: /api/auth/socket
+2025-01-21 16:50:34,694 (WARNING)- django.channels.server- HTTP GET /api/tasks 401 [0.04, 172.20.0.2:56566]
+2025-01-21 16:50:34,694 (WARNING)- django.channels.server- HTTP GET /api/auth/socket 401 [0.03, 172.20.0.2:56568]
+2025-01-21 16:50:34,763 (INFO)- django.channels.server- HTTP POST /api/auth/refresh 200 [0.03, 172.20.0.2:56572]
+2025-01-21 16:50:34,885 (INFO)- django.channels.server- HTTP POST /api/auth/refresh 200 [0.04, 172.20.0.2:56592]
+2025-01-21 16:50:34,896 (INFO)- django.channels.server- HTTP GET /api/tasks 200 [0.06, 172.20.0.2:56580]
+2025-01-21 16:50:34,925 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.01, 172.20.0.2:56596]
+2025-01-21 16:50:34,948 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/tasks/ [172.20.0.2:56598]
+2025-01-21 16:50:35,136 (INFO)- django.channels.server- WebSocket CONNECT /api/tasks/ [172.20.0.2:56598]
+2025-01-21 16:50:54,928 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.2:45958]
+2025-01-21 16:50:54,938 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/chat/wqwe/ [172.20.0.2:45962]
+2025-01-21 16:50:54,959 (INFO)- django.channels.server- WebSocket CONNECT /api/chat/wqwe/ [172.20.0.2:45962]
+2025-01-21 16:51:14,594 (INFO)- django.channels.server- WebSocket DISCONNECT /api/chat/wqwe/ [172.20.0.2:45962]
+2025-01-21 16:51:14,596 (INFO)- django.channels.server- WebSocket DISCONNECT /api/tasks/ [172.20.0.2:56598]
+2025-01-21 16:51:14,781 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.2:42002]
+2025-01-21 16:51:14,794 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/tasks/ [172.20.0.2:42016]
+2025-01-21 16:51:14,804 (INFO)- django.channels.server- HTTP GET /api/tasks 200 [0.05, 172.20.0.2:41986]
+2025-01-21 16:51:14,808 (INFO)- django.channels.server- WebSocket CONNECT /api/tasks/ [172.20.0.2:42016]
+2025-01-21 16:51:18,706 (INFO)- django.channels.server- WebSocket DISCONNECT /api/tasks/ [172.20.0.2:42016]
+2025-01-21 16:51:18,833 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.2:60750]
+2025-01-21 16:51:18,840 (INFO)- django.channels.server- HTTP GET /api/tasks 200 [0.03, 172.20.0.2:60736]
+2025-01-21 16:51:18,845 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/tasks/ [172.20.0.2:60766]
+2025-01-21 16:51:18,859 (INFO)- django.channels.server- WebSocket CONNECT /api/tasks/ [172.20.0.2:60766]
+2025-01-21 16:51:29,820 (INFO)- django.channels.server- WebSocket DISCONNECT /api/tasks/ [172.20.0.2:60766]
+2025-01-21 16:51:29,956 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.2:49420]
+2025-01-21 16:51:29,963 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/tasks/ [172.20.0.2:49430]
+2025-01-21 16:51:29,968 (INFO)- django.channels.server- HTTP GET /api/tasks 200 [0.04, 172.20.0.2:49408]
+2025-01-21 16:51:29,977 (INFO)- django.channels.server- WebSocket CONNECT /api/tasks/ [172.20.0.2:49430]
+2025-01-21 16:52:02,809 (INFO)- django.channels.server- WebSocket DISCONNECT /api/tasks/ [172.20.0.2:49430]
+2025-01-21 16:52:02,962 (WARNING)- django.request- Unauthorized: /api/tasks
+2025-01-21 16:52:02,963 (WARNING)- django.channels.server- HTTP GET /api/tasks 401 [0.00, 172.20.0.2:46992]
+2025-01-21 16:52:02,966 (WARNING)- django.request- Unauthorized: /api/auth/socket
+2025-01-21 16:52:02,967 (WARNING)- django.channels.server- HTTP GET /api/auth/socket 401 [0.00, 172.20.0.2:47008]
+2025-01-21 16:52:03,029 (INFO)- django.channels.server- HTTP POST /api/auth/refresh 200 [0.02, 172.20.0.2:47012]
+2025-01-21 16:52:03,031 (INFO)- django.channels.server- HTTP POST /api/auth/refresh 200 [0.02, 172.20.0.2:47028]
+2025-01-21 16:52:03,101 (INFO)- django.channels.server- HTTP GET /api/auth/socket 200 [0.02, 172.20.0.2:47034]
+2025-01-21 16:52:03,110 (INFO)- django.channels.server- WebSocket HANDSHAKING /api/tasks/ [172.20.0.2:47038]
+2025-01-21 16:52:03,133 (INFO)- django.channels.server- HTTP GET /api/tasks 200 [0.06, 172.20.0.2:47030]
+2025-01-21 16:52:03,134 (INFO)- django.channels.server- WebSocket CONNECT /api/tasks/ [172.20.0.2:47038]
